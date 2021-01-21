@@ -1,0 +1,31 @@
+extends layout
+
+block content
+    .w3-container.w3-teal
+          header.w3-container.w3-teal
+            h2.w3-left Add new resource
+    .w3-container
+      form(method='POST', action='/resource' novalidate class='validated-form')
+        #form-group
+          label.w3-text-teal
+            b Title
+          input.w3-input.x3-border.w3-light-grey.form-control(name='title', type='text' required)
+        #form-group
+          label.w3-text-teal 
+            b Subtitle
+          input.w3-input.x3-border.w3-light-grey.form-control(name='subtitle', type='text')
+        #form-group
+          label.w3-text-teal 
+            b Hashtags
+          input.w3-input.x3-border.w3-light-grey.form-control(name='hashtags', type='text')
+        #form-group
+          label.w3-text-teal 
+            b Type
+          select.w3-select.form-control.input-lg(name='type' required)
+            for c in categories
+              option(value=type)= c
+        #form-group
+          label.w3-text-teal 
+            b Date of creation
+          input.w3-input.x3-border.w3-light-grey.form-control(name='creationDate', type='date')
+        input.btn.w3-btn.w3-blue-grey(type='submit', value='Add resource')

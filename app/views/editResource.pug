@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    .w3-container.w3-teal
+          header.w3-container.w3-teal
+            h2.w3-left Edit resource
+    .w3-container
+        a.btn.w3-btn.w3-teal.w3-margin(class='button' href='/resource/' + resource._id) X Cancel
+        form(method='POST', action='/resource/'+ resource._id + '?_method=PUT' novalidate class='validated-form')
+         #form-group
+             label.w3-text-teal
+               b Title
+             input.w3-input.x3-border.w3-light-grey.form-control(name='title', type='text', value=resource.title , required)
+         #form-group
+              label.w3-text-teal 
+                  b Subtitle
+              input.w3-input.x3-border.w3-light-grey.form-control(name='subtitle', type='text', value=resource.subtitle)
+         #form-group
+              label.w3-text-teal 
+                   b Hashtags
+              input.w3-input.x3-border.w3-light-grey.form-control(name='hashtags', type='text', value=resource.hashtags)
+         #form-group
+            label.w3-text-teal 
+                b Type
+            select.w3-select.form-control.input-lg(name='type' required)
+             for c in categories
+              - var selected = (resource.type == c)
+              option(value=type, selected = selected? '' : null )= c
+         #form-group
+            label.w3-text-teal 
+                 b Date of creation
+            input.w3-input.x3-border.w3-light-grey.form-control(name='creationDate', type='date', value=resource.creationDate)
+         input.btn.w3-btn.w3-blue-grey(type='submit', value='Change resource')
+
