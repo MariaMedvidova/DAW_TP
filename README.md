@@ -1,9 +1,5 @@
 # TP_DAW
-Trabalho Prático de DAW
- User Register - DONE
- User Login - TO DO
-
- This is things what left and probably project will be done:
+This is things what left and probably project will be done:
 1. Be able comment on post => database is set up for that and also with deleting post will be delete also all coment.
 2. file upload
 3. ranking => I found npm module for show nice way on frontend stars, so this is done, so we just need computing average back
