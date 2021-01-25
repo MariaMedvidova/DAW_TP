@@ -15,3 +15,4 @@ NICE TO HAVE:
 3. add some effect/animation
 4. add resource to "user favourite" (Liked resources)
 5. add page where we will show only resource from user (My resource)
+6. pagination - show only fror example 10 resource per 1 page
