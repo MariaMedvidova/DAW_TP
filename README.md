@@ -8,3 +8,10 @@ This is things what left and probably project will be done:
 6. filtering by hashtags and year. Filtering by type is done at frond and backend
 7. add FB and Google login
 8. add new screen with news
+
+NICE TO HAVE:
+1. get likes/dislike
+2. make breadscrum
+3. add some effect/animation
+4. add resource to "user favourite" (Liked resources)
+5. add page where we will show only resource from user (My resource)
